@@ -1,0 +1,43 @@
+---
+title: "CodeBook"
+author: "Boluwatife Omirinde"
+date: "10/14/2020"
+---
+
+## Code Book
+The final summary tidy dataset "tidydata.txt" contains the average of each variable for each activity and each subject from the Human Activity Recognition Using Smartphones Data Set.
+
+##### The structure of the data set is described in the Data section, its variables are listed in the Variables section.
+
+###aData
+
+The tidy_data.txt data file is a text file, containing space-separated values.
+
+The first row contains the names of the variables, which are listed and described in the Variables section, and the following rows contain the values of these variables.
+
+###Variables
+
+Each row contains, for a given subject and activity, 79 averaged signal measurements.
+
+Identifiers
+
+subject
+
+Subject identifier, integer, ranges from 1 to 30.
+
+activity
+
+###Activity identifier, string with 6 possible values:
+
+WALKING: subject was walking 
+WALKING_UPSTAIRS: subject was walking upstairs 
+WALKING_DOWNSTAIRS: subject was walking downstairs 
+SITTING: subject was sitting 
+STANDING: subject was standing 
+LAYING: subject was laying Average of measurements
+
+All measurements are floating-point values, normalised and bounded within [-1,1].
+
+
+
+Source code "run_analysis.R" calculates the average for all measurement columns grouped by variables Activity and Subject and then writes the output to a local text file named "tidydata.txt""
